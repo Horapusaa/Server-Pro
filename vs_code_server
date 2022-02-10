@@ -1,6 +1,10 @@
+
+#install code
 git clone https://github.com/coder/code-server
 cd code-server
 bash install.sh
+
+#set config
 cat << EOF > /usr/local/etc/xray/config0.json
 {
 bind-addr: 0.0.0.0:8080
@@ -11,3 +15,5 @@ cert: false
 ]
 }
 EOF
+clear
+echo "to start the vs code server please type this command on your terminnal! > code-server"
